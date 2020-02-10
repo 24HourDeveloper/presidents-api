@@ -48,10 +48,8 @@ IF NOT EXISTS `president`
 -- Dumping data for table presidents.president: ~1 rows (approximately)
 /*!40000 ALTER TABLE `president` DISABLE KEYS */;
 INSERT INTO `president` (
-`
-id`,
-`first_name
-`
+`id`,
+`first_name`
 , `last_name`, `height`, `img_url`, `dob`, `dod`, `number`, `birth_place`, `impeached`) VALUES
 (1, 'George', 'Washington', '74', 'http://localhost:5000/images/president1.jpg', '1732-02-22', '1799-12-14', 1, 'Westmoreland County, Virginia', 0),
 (2, 'John', 'Adams', '68', 'http://localhost:5000/images/president2.jpg', '1735-10-30', '1826-07-04', 2, 'Braintree, Massachusetts', 0),
@@ -77,7 +75,27 @@ id`,
 (22,  'Grover','Cleveland','71','http://localhost:5000/images/president22.jpg','1837-03-18','1908-06-24',22,'Caldwell, New Jersey',0),
 (23, 'Benjamin','Harrison','66','http://localhost:5000/images/president23.jpg','1833-08-20','1901-03-13',23,'North Bend, Ohio',0),
 (24, 'Grover','Cleveland','71','http://localhost:5000/images/president24.jpg','1837-03-18','1908-06-24',24,'Caldwell, New Jersey',0),
-(25, 'William','Mckinley','67','http://localhost:5000/images/president25.jpg','1843-01-29','1901-09-14',25,'Niles, Ohio',0);
+(25, 'William','Mckinley','67','http://localhost:5000/images/president25.jpg','1843-01-29','1901-09-14',25,'Niles, Ohio',0),
+(26, 'Theodore', 'Roosevelt', '71.5',  'http://localhost:5000/images/president26.jpg', '1858-10-27', '1919-01-06', 'New York City, New York', 0), 
+(27, 'William Howard', 'Taft', '72',  'http://localhost:5000/images/president27.jpg', '1857-09-15', '1930-03-08', 'Cincinnati, Ohio', 0),
+(28, 'Woodrow', 'Wilson', '71.5',  'http://localhost:5000/images/president28.jpg', '1856-12-28', '1924-02-03', 'Washington, D.C.', 0),
+(29, 'Warren G.', 'Harding', '72',  'http://localhost:5000/images/president29.jpg', '1865-11-02', '1923-08-02', 29, 'Blooming Grove, Ohio', 0),
+(30, 'Calvin', 'Coolidge', '71.5',  'http://localhost:5000/images/president30.jpg', '1872-07-04', '1933-01-05', 30, 'Plymouth Notch, Vermont', 0),
+(31, 'Herbert Clark', 'Hoover' ,'72', 'http://localhost:5000/images/president31.jpg', '1874-08-10', '1964-10-20', 31, 'West Branch, Iowa', 0),
+(32, 'Franklin D.', 'Roosevelt', '74',  'http://localhost:5000/images/president32.jpg', '1882-01-30', '1945-04-12', 32, 'Hype Park, New York', 0),
+(33, 'Harry S.', 'Truman', '70',  'http://localhost:5000/images/president33.jpg','1884-05-08', '1972-12-26', 33, 'Lamar, Missouri',0),
+(34,'Dwight D.' 'Eisenhower' ,'71.5', 'http://localhost:5000/images/president34.jpg', '1890-10-14', '1969-03-28', 34, 'Denison Texas',0),
+(35,'John F.', 'Kennedy', '72', 'http://localhost:5000/images/president35.jpg', '1917-05-29', '1963-11-22', 35,  'Dallas, Texas',0),
+(36,'Lyndon B.', 'Johnson', '77', 'http://localhost:5000/images/president36.jpg', '1908-08-27', '1973-01-22', 36, 'Stonewall, Texas',0),
+(37,'Richard','Nixon', '71' ,'http://localhost:5000/images/president37.jpg',  '1913-01-09', '1994-04-22', 37, 'Yorba Linda, California' ,0),
+(38,'Gerald', 'Ford', '72', 'http://localhost:5000/images/president38.jpg', '1913-07-14' , '2006-12-26', 38, 'Omaha, Nebraska', 0),
+(39,'Jimmy', 'Carter', '71.5', 'http://localhost:5000/images/president39.jpg', '1924-10-01', null, 39, 'Plains Georgia' ,0),
+(40,'Ronald', 'Reagan', '73',  'http://localhost:5000/images/president40.jpg', '1911-02-06' , '2004-06-05', 40, 'Tampico, Illinois', 0),
+(41,'George H. W.', 'Bush', '74', 'http://localhost:5000/images/president41.jpg', '1924-06-12' , '2018-11-30', 41, 'Milton, MA', 0),
+(42,'Bill', 'Clinton', '74',  'http://localhost:5000/images/president42.jpg', '1946-08-19', null, 42, 'Hope, Arkansas', 0),
+(43,'George W.', 'Bush', '72', 'http://localhost:5000/images/president43.jpg',  '1946-07-06', null, 43 ,'New Haven, Connecticut', 0),
+(44,'Barack', 'Obama Sr' ,'74',  'http://localhost:5000/images/president44.jpg', '1961-08-04', null, 44 , 'Honolulu, Hawaii' 0),
+(45,'Donald', 'Trump', '76', 'http://localhost:5000/images/president45.jpg', '1946-06-14', null, 45, 'New York, NY', 0);
 
 /*!40000 ALTER TABLE `president` ENABLE KEYS */;
 
@@ -101,10 +119,8 @@ IF NOT EXISTS `term`
 -- Dumping data for table presidents.term: ~0 rows (approximately)
 /*!40000 ALTER TABLE `term` DISABLE KEYS */;
 INSERT INTO `term` (
-`
-id`,
-`president_id
-`
+`id`,
+`president_id`
 , `start_date`, `end_date`) VALUES
 (1, 1, '1789-04-30', '1797-03-04'),
 (2, 2, '1797-03-04', '1801-03-04'),
