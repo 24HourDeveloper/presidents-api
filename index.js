@@ -26,7 +26,12 @@ app.get("/", (req, res) => {
 
 app.get("/president/:id", (req, res) => {
   const id = req.params.id;
-  res.json(presidents[id]);
+  connection.query(`SELECT * FROM president WHERE id=${id}`, (err, results) => {
+    if (err) console.log(err);
+
+    console.log(results);
+    res.json(results);
+  });
 });
 
 app.listen(5000, () => console.log("server is up"));
