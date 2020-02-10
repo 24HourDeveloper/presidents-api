@@ -48,8 +48,10 @@ IF NOT EXISTS `president`
 -- Dumping data for table presidents.president: ~1 rows (approximately)
 /*!40000 ALTER TABLE `president` DISABLE KEYS */;
 INSERT INTO `president` (
-`id`,
-`first_name`
+`
+id`,
+`first_name
+`
 , `last_name`, `height`, `img_url`, `dob`, `dod`, `number`, `birth_place`, `impeached`) VALUES
 (1, 'George', 'Washington', '74', 'http://localhost:5000/images/president1.jpg', '1732-02-22', '1799-12-14', 1, 'Westmoreland County, Virginia', 0),
 (2, 'John', 'Adams', '68', 'http://localhost:5000/images/president2.jpg', '1735-10-30', '1826-07-04', 2, 'Braintree, Massachusetts', 0),
@@ -60,7 +62,7 @@ INSERT INTO `president` (
 (7, 'Andrew','Jackson','73','http://localhost:5000/images/president7.jpg','1767-03-15','1845-06-08',7,'Waxhaws, South Carolina',0),
 (8, 'Martin Van', 'Buren', '66', 'http://localhost:5000/images/president8.jpg','1782-12-05','1862-07-24',8,'Kinderhook, New York',0),
 (9, 'William Henry','Harrison','68', 'http://localhost:5000/images/president9.jpg','1773-02-09','1841-04-04',9,'Richmond, Virginia',0),
-(10, 'John','Tyler','72','http://localhost:5000/images/president10.jpg','1790-03-29','1862-01-18',10,'Charles City, Virginia',0),
+(10, 'John','Tyler','72','http://localhost:5000/images/president10.png','1790-03-29','1862-01-18',10,'Charles City, Virginia',0),
 (11, 'James Knox', 'Polk', '68','http://localhost:5000/images/president11.jpg','1795-11-02','1849-06-15',11,'Pineville, North Carolina',0),
 (12, 'Zachary','Taylor','68','http://localhost:5000/images/president12.jpg','1784-11-24','1850-07-09',12,'Barboursville, Virginia',0),
 (13,'Millard','Fillmore','69','http://localhost:5000/images/president13.jpg','1800-01-07','1874-07-09',13,'Moravia, New York',0),
@@ -99,8 +101,10 @@ IF NOT EXISTS `term`
 -- Dumping data for table presidents.term: ~0 rows (approximately)
 /*!40000 ALTER TABLE `term` DISABLE KEYS */;
 INSERT INTO `term` (
-`id`,
-`president_id`
+`
+id`,
+`president_id
+`
 , `start_date`, `end_date`) VALUES
 (1, 1, '1789-04-30', '1797-03-04'),
 (2, 2, '1797-03-04', '1801-03-04'),
