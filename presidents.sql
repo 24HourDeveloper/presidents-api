@@ -32,8 +32,8 @@ IF NOT EXISTS `president`
 (50) NOT NULL,
   `img_url` varchar
 (50) NOT NULL,
-  `dob` timestamp NOT NULL,
-  `dod` timestamp NULL DEFAULT NULL,
+  `dob` Date NOT NULL,
+  `dod` Date NULL DEFAULT NULL,
   `number` int NOT NULL,
   `birth_place` varchar
 (50) NOT NULL,
@@ -89,13 +89,13 @@ INSERT INTO `president` (
 (36,'Lyndon B.', 'Johnson', '77','http://localhost:5000/images/president36.jpg', '1908-08-27', '1973-01-22', 36, 'Stonewall, Texas',0),
 (37,'Richard','Nixon', '71' ,'http://localhost:5000/images/president37.jpg',  '1913-01-09', '1994-04-22', 37, 'Yorba Linda, California' ,0),
 (38,'Gerald', 'Ford', '72', 'http://localhost:5000/images/president38.jpg', '1913-07-14' , '2006-12-26', 38, 'Omaha, Nebraska', 0),
-(39,'Jimmy', 'Carter', '71.5','http://localhost:5000/images/president39.jpg', '1924-10-01', 'null', 39, 'Plains Georgia' ,0),
+(39,'Jimmy', 'Carter', '71.5','http://localhost:5000/images/president39.jpg', '1924-10-01', null, 39, 'Plains Georgia' ,0),
 (40,'Ronald', 'Reagan', '73','http://localhost:5000/images/president40.jpg', '1911-02-06' , '2004-06-05', 40, 'Tampico, Illinois', 0),
 (41,'George H. W.', 'Bush', '74','http://localhost:5000/images/president41.jpg', '1924-06-12' , '2018-11-30', 41, 'Milton, MA', 0),
-(42,'Bill', 'Clinton', '74','http://localhost:5000/images/president42.jpg', '1946-08-19', 'null', 42, 'Hope, Arkansas', 0),
-(43,'George W.', 'Bush', '72','http://localhost:5000/images/president43.jpg',  '1946-07-06', 'null', 43 ,'New Haven, Connecticut', 0),
-(44,'Barack', 'Obama Sr' ,'74','http://localhost:5000/images/president44.jpg', '1961-08-04', 'null', 44 , 'Honolulu, Hawaii', 0),
-(45,'Donald', 'Trump', '76','http://localhost:5000/images/president45.jpg', '1946-06-14', 'null', 45, 'New York, NY', 0);
+(42,'Bill', 'Clinton', '74','http://localhost:5000/images/president42.jpg', '1946-08-19', null, 42, 'Hope, Arkansas', 1),
+(43,'George W.', 'Bush', '72','http://localhost:5000/images/president43.jpg',  '1946-07-06', null, 43 ,'New Haven, Connecticut', 0),
+(44,'Barack', 'Obama Sr' ,'74','http://localhost:5000/images/president44.jpg', '1961-08-04', null, 44 , 'Honolulu, Hawaii', 0),
+(45,'Donald', 'Trump', '76','http://localhost:5000/images/president45.jpg', '1946-06-14', null, 45, 'New York, NY', 1);
 
 /*!40000 ALTER TABLE `president` ENABLE KEYS */;
 
